@@ -57,7 +57,5 @@ private:
         }
         return pos;
     }
-
-
 };
 
