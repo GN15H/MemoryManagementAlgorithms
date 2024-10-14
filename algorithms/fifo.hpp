@@ -15,9 +15,6 @@ public:
 
     void fifo(){
         if(processVec.size() == 0 || frames == 0) return;
-        std::cout<<"aver "<<memoryVec[0].size()<<" aver 2 "<<memoryVec[1].size();
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-        std::cin.get();
         memoryVec[0].emplace_back(processVec[0]);
         for(int i=1; i<memoryVec.size(); i++){
             addProcess(i,processVec[i]);
