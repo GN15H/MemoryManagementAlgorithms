@@ -33,7 +33,7 @@ private:
         memoryVec[memoryPos] = memoryVec[memoryPos-1];
         if(isInMemory(memoryPos, process)) return;
         fails++;
-        if(memoryPos<frames){
+        if(memoryVec[memoryPos].size()<frames){
             memoryVec[memoryPos].emplace_back(process);
             return;
         }

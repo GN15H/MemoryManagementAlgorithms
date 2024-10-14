@@ -29,7 +29,7 @@ private:
         memoryVec[memoryPos] = memoryVec[memoryPos-1];
         if(MAlgorithm::isInMemory(memoryPos, process)) return;
         fails++;
-        if(memoryPos<frames){
+        if(memoryVec[memoryPos].size()<frames){
             memoryVec[memoryPos].emplace_back(process);
             return;
         }

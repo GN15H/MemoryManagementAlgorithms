@@ -61,11 +61,11 @@ private:
 
     static void printInputFails(const std::vector<std::vector<int>> &memoryVec, unsigned int frames){
         int i = 0;
-        for (; i < frames; i++) std::cout << "|  ";
+        //for (; i < frames; i++) std::cout << "|  ";
         for (; i < memoryVec.size(); i++) if (memoryVec[i] != memoryVec[i - 1]) std::cout << "|  "; else std::cout << "   ";
         std::cout << "\n";
         i = 0;
-        for (; i < frames; i++) std::cout << "v  "; 
+        //for (; i < frames; i++) std::cout << "v  "; 
         for (; i < memoryVec.size(); i++) if (memoryVec[i] != memoryVec[i - 1]) std::cout << "v  "; else std::cout << "   ";
         std::cout << "\n";
     }

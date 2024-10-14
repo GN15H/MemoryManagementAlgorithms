@@ -14,6 +14,13 @@ public:
         memoryVec = std::vector<std::vector<int>>(processVec.size());
     }
 
+    void printVector(const std::vector<int> vec){
+        for(int x: vec){
+            std::cout<<x<<" ";
+        }
+        std::cout<<std::endl;
+    }
+
 protected: 
     bool isInMemory(const unsigned int memoryPos, int process) const {
         for(int p: memoryVec[memoryPos]){
